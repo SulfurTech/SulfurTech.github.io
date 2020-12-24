@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<title>
+	Ресторан Burger House
+	</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="body">
+<div class="header">
+	<a href="#"><img class="logo" src="image/logo.jpg" alt='logo'> </a>
+	<ul class="header__list list">
+		<li class="list__item">Новинки</li>
+		<li class="list__item">Меню</li>
+		<li class="list__item">Знижки</li>
+		<li class="list__item">Де ми?</li>
+		<li class="list__item">Доставка</li>
+		<li class="list__item">Кар'єра</li>
+		<li class="list__item">Про нас</li>
+	</ul>
+	<div class="header__lang lang">
+		<a class="lang__item isSelected" href="#">ua</a>
+		<a class="lang__item" href="#">ru</a>
+		<a class="lang__item" href="#">en</a>
+	</div>
+</div>
+<div class="main">
+
+<div class="block1">
+	<div class="block1__img-container">
+		<img class="block1__img" src="image/hamburger.jpg" alt='hamburger'/>
+	</div>
+	<div class="block1__description">
+		<h2 class="block1__title">Тільки у нас</h2>
+		<p class="block1__text">Свіжі продукти прямо з ферми, майстри з багаторічним досвідом та унікальні авторські рецепти. Саме це надає нашим стравам такий яскравий смак та спокушуючий аромат перед якими неможливо встояти. Смакуйте в ресторанах або замовляйте в будь-яку точку Києва.</p>
+		<div class="block1__button"> 
+			<button class="button">Зробити замовлення</button>
+		</div>
+	</div>
+</div>
+<div class="block5">
+	<div class="block5__text-container">
+	<h3 class="block5__text">
+		Залишилися запитання? Натиснiть кнопку i наш менеджер зв’яжеться з вами.
+	</h3>
+<button class="button block5__button" onclick="document.getElementById('window').classList.add('modal-open')"> Дзвінок менеджера</button></div>
+	<div class="block5__img-container">
+	<img class="block5__img" src="image/manager.png" alt='manager'></div>
+</div>
+
+</div>
+<div class="footer">
+	<div class="footer__descriprion">
+	<h1 class="footer__title">BurgerHouse</h1>
+	<ul class="footer__list list">
+		<li class="list__item"><a href="#">Політика конфідеційності</a></li>
+		<li class="list__item"><a href="#">Положення та умови</a></li>
+		<li class="list__item">Created by Sulfur</li>
+	</ul>
+</div>
+	<div class="footer__icons">
+		<div class="icon">
+			
+				<img class="icon__img" src="image/facebook.png" alt='facebook'>
+			</div>
+		<div class="icon">
+				<img class="icon__img" src="image/inst.png" alt='inst'>
+			</div>
+		<div class="icon">
+			<img class="icon__img" src="image/youtube.png" alt='youtube'>
+			</div>
+		<div class="icon">
+				<img class="icon__img" src="image/twitter.png" alt='twitter'>
+			</div>
+	</div>
+</div>
+
+<div id="window" class="modal">
+	<button class="window__out" onclick="document.getElementById('window').classList.remove('modal-open')">X</button>
+	<div class="modal__img_block">
+		<img src="image/call.png" class="modal__img">
+	</div>
+	<div class="window__text-conteiner">
+		<input class="modal__input" type="text" name="input__name" placeholder="Ваше ім'я">
+		<input class="modal__input" type="text" name="input__number" placeholder="+38 (___)__-__-___">
+		<button class="window__button button">Виклик</button>
+	</div>
+</div>
+
+</body>
+</html>
